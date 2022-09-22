@@ -1,0 +1,112 @@
+[
+    {
+        "model":"mywatchlist.watchitem",
+        "pk":1,
+        "fields":{
+            "watched":"true",
+            "title":"Luck",
+            "rating": "5",
+            "release_date": "2022",
+            "review": "Lumayan bagus sih, cuma animasinya kurang mulus"
+        }
+    },
+    {
+        "model":"mywatchlist.watchitem",
+        "pk":2,
+        "fields":{
+            "watched":"true",
+            "title":"Into the Woods",
+            "rating": "8",
+            "release_date": "2014",
+            "review": "Cocok untuk yang suka filem tipe seperti harry potter"
+        }
+    },
+    {
+        "model":"mywatchlist.watchitem",
+        "pk":3,
+        "fields":{
+            "watched":"true",
+            "title":"Tangled",
+            "rating": "9",
+            "release_date": "2010",
+            "review": "Jadi pengen punya rambut panjang!"
+        }
+    },
+    {
+        "model":"mywatchlist.watchitem",
+        "pk":4,
+        "fields":{
+            "watched":"false",
+            "title":"Cars",
+            "rating": "10",
+            "release_date": "2006",
+            "review": "HABIS INI PENGEN BELI MOBIL MERAH!!"
+        }
+    },
+    {
+        "model":"mywatchlist.watchitem",
+        "pk":5,
+        "fields":{
+            "watched":"false",
+            "title":"Big Hero 6",
+            "rating": "7",
+            "release_date": "2014",
+            "review": "Sedih bgt filmnya :("
+        }
+    },
+    {
+        "model":"mywatchlist.watchitem",
+        "pk":6,
+        "fields":{
+            "watched":"true",
+            "title":"Minions",
+            "rating": "8.9",
+            "release_date": "2015",
+            "review": "babababa babanana"
+        }
+    },
+    {
+        "model":"mywatchlist.watchitem",
+        "pk":7,
+        "fields":{
+            "watched":"false",
+            "title":"Ice Age",
+            "rating": "7",
+            "release_date": "2002",
+            "review": "childhood memories bgt"
+        }
+    },
+    {
+        "model":"mywatchlist.watchitem",
+        "pk":8,
+        "fields":{
+            "watched":"true",
+            "title":"Finding Nemo",
+            "rating": "8",
+            "release_date": "2003",
+            "review": "Film kartun yang berhasil bikin gua nangis karena ikan hilang"
+        }
+    },
+    {
+        "model":"mywatchlist.watchitem",
+        "pk":9,
+        "fields":{
+            "watched":"false",
+            "title":"Toy Story",
+            "rating": "8",
+            "release_date": "1995",
+            "review": "Suka deg-degan kalau punya boneka sendiri"
+        }
+    },
+    {
+        "model":"mywatchlist.watchitem",
+        "pk":10,
+        "fields":{
+            "watched":"true",
+            "title":"Incerdibles 2",
+            "rating": "10",
+            "release_date": "2018",
+            "review": "jadi pengen punya superhero!"
+        }
+    }
+]
