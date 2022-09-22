@@ -8,6 +8,8 @@ from mywatchlist.views import menerima_request_id_json
 from mywatchlist.views import menerima_fungsi_html
 from mywatchlist.views import menerima_request_id_xml
 
+app_name = 'mywatchlist'
+
 urlpatterns = [
     path('',show_mywatchlist, name='show_mywatchlist'),
     path('xml/', menerima_fungsi_xml, name='mywatchlist/xml'),
