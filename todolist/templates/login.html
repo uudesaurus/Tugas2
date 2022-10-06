@@ -1,45 +1,45 @@
 {% extends 'base.html' %}
 
-{% block meta %}
-<title>Login</title>
-{% endblock meta %}
-
-{% block content %}
-
-<div class = "login">
-
-    <h1>Login</h1>
-
-    <form method="POST" action="">
-        {% csrf_token %}
-        <table>
-            <tr>
-                <td>Username: </td>
-                <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
-            </tr>
-                    
-            <tr>
-                <td>Password: </td>
-                <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td><input class="btn login_btn" type="submit" value="Login"></td>
-            </tr>
-        </table>
-    </form>
-
-    {% if messages %}
-        <ul>
-            {% for message in messages %}
-                <li>{{ message }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}     
+    {% block meta %}
+    <title>Login</title>
+    {% endblock meta %}
+    
+    {% block content %}
+    
+    <div class = "login">
+        <div class="snap-y snap-mandatory h-screen w-screen overflow-scroll">
+            <div class="snap-start bg-[url('https://i.ibb.co/PMBtkdQ/DPA-4561-2.jpg')] w-full h-full bg-no-repeat bg-cover flex flex-col justify-center items-center">
+                <h1 class =" font-sans font-bold text-3xl text-white ">Tugas PBP 5
+                </h1>
+            </div>
+            <div class="snap-start bg-gradient-to-r from-pink-500 to-blue-500 w-screen h-screen flex flex-col justify-center items-center">
+                <form method="POST" action="" class="flex flex-col justify-center items-center">
+                    {% csrf_token %}
+                    <td>Username: </td>
+                    <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
+                    <td>Password: </td>
+                    <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
+                    <td><input class="btn login_btn" type="submit" value="Login"></td>
+                </form>
+                {% if messages %}
+                    <ul>
+                        {% for message in messages %}
+                            <li>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}     
+                <div class="mt-6">
+                    <button
+                        class="btn login_btn w-full bg-black hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" value="Login">
+                        Login
+                    </button>
+                </div>
+                <h1 class="mt-2 text-gray-900 text-base text-center dark:text-gray-300">Apakah anda sudah memiliki akun? <a class="text-white"
+                        href="{% url 'todolist:register' %}">Yuk daftar!</a></h1>  
+                {% endblock content %}
+            </div>
+            </div>
+        </div>
+    
         
-    Belum mempunyai akun? <a href="{% url 'todolist:register' %}">Buat Akun</a>
-
-</div>
-
-{% endblock content %}
+</html>

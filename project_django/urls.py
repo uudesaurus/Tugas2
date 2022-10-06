@@ -21,7 +21,8 @@ urlpatterns = [
     path('', include('example_app.urls')),
     path('katalog/', include('katalog.urls')),
     path('mywatchlist/', include('mywatchlist.urls')),
-    path('todolist/', include('todolist.urls'))
+    path('todolist/', include('todolist.urls')),
+    path("__reload__/", include("django_browser_reload.urls")),
 ]
 
 # TODO: Implement Routings Here

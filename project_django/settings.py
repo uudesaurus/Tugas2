@@ -14,9 +14,6 @@ import os
 import dj_database_url
 from pathlib import Path
 
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -46,6 +43,9 @@ INSTALLED_APPS = [
     'katalog',
     'mywatchlist',
     'todolist',
+    'tailwind',
+    'theme',
+    'django_browser_reload'
 ]
 
 MIDDLEWARE = [
@@ -57,6 +57,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_browser_reload.middleware.BrowserReloadMiddleware',
 ]
 
 ROOT_URLCONF = 'project_django.urls'
@@ -146,3 +147,11 @@ for directory in [*STATICFILES_DIRS, STATIC_ROOT]:
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+TAILWIND_APP_NAME = 'theme'
+
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
+
+NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"

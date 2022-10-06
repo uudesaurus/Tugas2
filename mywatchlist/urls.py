@@ -1,5 +1,4 @@
 from django.urls import path
-from Tugas2.mywatchlist.views import menerima_fungsi_html, menerima_fungsi_json, menerima_fungsi_xml, menerima_request_id_html
 from mywatchlist.views import show_mywatchlist
 from mywatchlist.views import menerima_fungsi_xml
 from mywatchlist.views import menerima_fungsi_html
